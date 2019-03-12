@@ -10,7 +10,7 @@ public class IndexController {
 	
 	@GetMapping(value="/index")
 	public String index (Map<String, Object> m) {
-		m.put("titulo", "Sistema de Inscripción Carrera de Mecánica");
+		m.put("titulo", "Mecánica");
 		return"index";
 	}
 
