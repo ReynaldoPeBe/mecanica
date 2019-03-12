@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="/mdb-4.6.0/css/style.css">
 <link rel="stylesheet" href="css/main.css" />
 </head>
-<body class="bg-light">
+<body >
 	<div class="contairner">
 		<div id="particles">
 			<div id="webcoderskull">

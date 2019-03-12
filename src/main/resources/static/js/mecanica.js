@@ -1,5 +1,4 @@
 /*JS*/
-
 function sd() {
 	$.ajax({
 		type : "POST",
@@ -10,18 +9,15 @@ function sd() {
 		success : function(msg) {
 			$('#formulariomecanica').show();
 			$('#formulariomecanica').html(msg);
-			anchorfcpn('formulariomecanica');
+			anchorjes('formulariomecanica');
 		}
 	});
 }
-
-function anchorfcpn(cc) {
-    $("#"+cc).fadeIn(1500);
-    $('html, body').animate({
-        scrollTop: $("#"+cc).offset().top
-    }, 1500);
+function anchorjes(cc) {
+	$("#" + cc).fadeIn(1500);
+	$('html, body').animate({
+		scrollTop : $("#" + cc).offset().top
+	}, 1500);
 }
-
 $(document).ready(function() {
-
 });

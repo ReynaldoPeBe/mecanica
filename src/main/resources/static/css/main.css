@@ -1,19 +1,29 @@
 @charset "ISO-8859-1";
-#webcoderskull{
-    position: absolute;
-    left: 0;
-    top: 20%;
-    padding: 0 20px;
-    width: 100%;
-    text-align: center;
+
+#webcoderskull {
+	position: absolute;
+	left: 0;
+	top: 20%;
+	padding: 0 20px;
+	width: 100%;
+	text-align: center;
 }
 
-canvas{
-    height:100vh;
-    background-color:#004040;
+canvas {
+	height: 100vh;
+	background-color: #004040;
 }
-#webcoderskull h1{
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
+
+#webcoderskull h1 {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+body {
+	background: #00bb5e; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #004040, #00bb5e);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #004040, #00bb5e);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
