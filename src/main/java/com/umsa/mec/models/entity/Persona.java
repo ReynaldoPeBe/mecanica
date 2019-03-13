@@ -57,17 +57,10 @@ public class Persona implements Serializable {
 	public void setFechaCreacion(Date fechaCreacion) {
 		this.fechaCreacion = fechaCreacion;
 	}
-
-	public Persona(Long id, String nombre, String apellidoPaterno, String apellidoMaterno, Integer celular, Integer ci,
-			String email) {
+	
+	public Persona() {
 		super();
-		this.id = id;
-		this.nombre = nombre;
-		this.apellidoPaterno = apellidoPaterno;
-		this.apellidoMaterno = apellidoMaterno;
-		this.celular = celular;
-		this.ci = ci;
-		this.email = email;
+		// TODO Auto-generated constructor stub
 	}
 
 	public Long getId() {

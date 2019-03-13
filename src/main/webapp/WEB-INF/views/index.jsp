@@ -22,11 +22,14 @@
 	<div class="contairner">
 		<div id="particles">
 			<div id="webcoderskull">
+				<h2 class="text-white mb-3">Universidad Mayor de San Andrés</h2>
+				<h2 class="text-white mb-3">Facultad de Ingenieria</h2>
 				<h1 class="text-white">Carrera de ${titulo}</h1>
 				<h2 class="text-white">Curso Impresión 3D</h2>
 				<p class="text-white">Curso teórico practico en donde aprenderás sobre las
 					tecnologías de manufactura aditiva, configuraciones de impresión,
 					además de sus aplicaciones.</p>
+				<h1 class="text-white">${resultado}</h1>
 				<button class="btn btn-warning" onclick="sd();">Quiero inscribirme</button>
 			</div>
 		</div>

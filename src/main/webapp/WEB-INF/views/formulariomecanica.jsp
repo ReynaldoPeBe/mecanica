@@ -8,8 +8,9 @@
 			<strong>${f}</strong>
 		</h5>
 		<div class="card-body px-lg-5">
-			<form:form acceptCharset="/inscripcion" modelAttribute="persona"
-				method="POST" class="text-center" style="color: #757575;">
+			<form:form action="/inscripcion" method="post"
+				modelAttribute="persona" class="text-center" style="color: #757575;">
+
 				<p>
 					Para poder inscribirte debes llenar todo el formulario, recuerda, <b>la
 						información</b> que nos proporciones nos servirá para la <b>entrega
@@ -22,24 +23,28 @@
 					<label for="nombre">Nombre</label>
 				</div>
 				<div class="md-form">
-					<form:input path="apellidoPaterno" type="text" id="apellidoPaterno" class="form-control"/>
+					<form:input path="apellidoPaterno" type="text" id="apellidoPaterno"
+						class="form-control" />
 					<label for="apellidoPaterno">Apellido Paterno</label>
 				</div>
 				<div class="md-form">
-					<form:input path="apellidoMaterno" type="text" id="apellidoMaterno" class="form-control"/>
+					<form:input path="apellidoMaterno" type="text" id="apellidoMaterno"
+						class="form-control" />
 					<label for="apellidoMaterno">Apellido Materno</label>
 				</div>
 				<div class="md-form">
-					<form:input path="ci" type="text" id="ci" class="form-control"/> <label
-						for="ci">C.I.</label>
+					<form:input path="ci" type="text" id="ci" class="form-control" />
+					<label for="ci">C.I.</label>
 				</div>
 				<div class="md-form">
-					<form:input path="celular" type="text" id="celular" class="form-control"/> <label
-						for="celular">Nro. Celular</label>
+					<form:input path="celular" type="text" id="celular"
+						class="form-control" />
+					<label for="celular">Nro. Celular</label>
 				</div>
 				<div class="md-form">
-					<form:input path="email" type="email" id="email" class="form-control"/> <label
-						for="email">E-mail</label>
+					<form:input path="email" type="email" id="email"
+						class="form-control" />
+					<label for="email">E-mail</label>
 				</div>
 				<button
 					class="btn btn-outline-success btn-rounded btn-block z-depth-0 my-4 waves-effect"
