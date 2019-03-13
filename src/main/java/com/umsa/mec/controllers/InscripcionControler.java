@@ -4,6 +4,7 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -23,8 +24,9 @@ public class InscripcionControler {
 		return "formulariomecanica";
 	}
 	@PostMapping(value="/inscripcion")
-	public String inscripcion (Persona persona) {
+	public String inscripcion (Persona persona, Model m) {
 		personaDao.save(persona);
-		return "redirect:/index";
+		m.addAttribute("i","Inscripcion realizada");
+		return "inscripcion";
 	}
 }
