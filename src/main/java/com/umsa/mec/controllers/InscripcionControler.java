@@ -24,9 +24,11 @@ public class InscripcionControler {
 		return "formulariomecanica";
 	}
 	@PostMapping(value="/inscripcion")
-	public String inscripcion (Persona persona, Model m) {
+	public String inscripcion (Persona persona, Model m, final RedirectAttributes redirectAttributes) {
 		personaDao.save(persona);
-		m.addAttribute("i","Inscripcion realizada");
-		return "inscripcion";
+		m.addAttribute("resultado","Inscripcion realizada");
+		redirectAttributes.addFlashAttribute("resultado","Inscripcion realizada");
+		
+		return "redirect:/index";
 	}
 }

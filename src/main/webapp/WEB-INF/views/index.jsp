@@ -18,19 +18,32 @@
 <link rel="stylesheet" href="/mdb-4.6.0/css/style.css">
 <link rel="stylesheet" href="css/main.css" />
 </head>
-<body >
+<body>
 	<div class="contairner">
 		<div id="particles">
 			<div id="webcoderskull">
-				<h2 class="text-white mb-3">Universidad Mayor de San Andrés</h2>
-				<h2 class="text-white mb-3">Facultad de Ingenieria</h2>
-				<h1 class="text-white">Carrera de ${titulo}</h1>
-				<h2 class="text-white">Curso Impresión 3D</h2>
-				<p class="text-white">Curso teórico practico en donde aprenderás sobre las
-					tecnologías de manufactura aditiva, configuraciones de impresión,
-					además de sus aplicaciones.</p>
-				<h1 class="text-white">${resultado}</h1>
-				<button class="btn btn-warning" onclick="sd();">Quiero inscribirme</button>
+				<h4 class="text-white mb-3">Universidad Mayor de San Andrés</h4>
+				<h4 class="text-white mb-3">Facultad de Ingenieria</h4>
+				<c:if test="${not empty resultado}">
+					<div class="alert alert-warning alert-dismissible fade show"
+						role="alert">
+						<strong>${resultado}</strong>
+						<button type="button" class="close" data-dismiss="alert"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+				</c:if>
+
+
+				<h3 class="text-white">Carrera de ${titulo}</h3>
+				<h4 class="text-white">Curso Impresión 3D</h4>
+				<p class="text-white">Curso teórico practico en donde aprenderás
+					sobre las tecnologías de manufactura aditiva, configuraciones de
+					impresión, además de sus aplicaciones.</p>
+
+				<button class="btn btn-warning" onclick="sd();">Quiero
+					inscribirme</button>
 			</div>
 		</div>
 	</div>

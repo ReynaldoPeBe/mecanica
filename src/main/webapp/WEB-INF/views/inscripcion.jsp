@@ -23,6 +23,7 @@
 		<div id="particles">
 			<div id="webcoderskull">
 				<h1 class="text-white mt-5">${i}</h1>
+				<button class="btn btn-warning" onclick="zzindex();">Quiero inscribirme</button>
 			</div>
 		</div>
 	</div>
