@@ -1,5 +1,7 @@
 package com.umsa.mec.models.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -18,4 +20,13 @@ public class PersonaDaoImpl implements IPersonaDao {
 	public void save(Persona persona) {
 		em.persist(persona);
 	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	@Transactional(readOnly=true)
+	public List<Persona> findAll() {
+		return em.createQuery("from Persona").getResultList();
+	}
+
+	
 }

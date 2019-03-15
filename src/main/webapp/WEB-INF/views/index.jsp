@@ -1,5 +1,6 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,7 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="-">
-<meta name="author" content="Jesús Reynbaldo Pérez Benavides">
+<meta name="author" content="JesÃºs Reynbaldo PÃ©rez Benavides">
 <!-- Font awesome -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -22,7 +23,7 @@
 	<div class="contairner">
 		<div id="particles">
 			<div id="webcoderskull">
-				<h4 class="text-white mb-3">Universidad Mayor de San Andrés</h4>
+				<h4 class="text-white mb-3">Universidad Mayor de San AndrÃ©s</h4>
 				<h4 class="text-white mb-3">Facultad de Ingenieria</h4>
 				<c:if test="${not empty resultado}">
 					<div class="alert alert-warning alert-dismissible fade show"
@@ -34,13 +35,11 @@
 						</button>
 					</div>
 				</c:if>
-
-
 				<h3 class="text-white">Carrera de ${titulo}</h3>
-				<h4 class="text-white">Curso Impresión 3D</h4>
-				<p class="text-white">Curso teórico practico en donde aprenderás
-					sobre las tecnologías de manufactura aditiva, configuraciones de
-					impresión, además de sus aplicaciones.</p>
+				<h4 class="text-white">Curso ImpresiÃ³n 3D</h4>
+				<p class="text-white">Curso teÃ³rico practico en donde aprenderÃ¡s
+					sobre las tecnologÃ­as de manufactura aditiva, configuraciones de
+					impresiÃ³n, ademÃ¡s de sus aplicaciones.</p>
 
 				<button class="btn btn-warning" onclick="sd();">Quiero
 					inscribirme</button>

@@ -20,5 +20,4 @@ public class IndexController {
 		m.put("titulo", "Electromecánica");
 		return"index";
 	}
-
 }
