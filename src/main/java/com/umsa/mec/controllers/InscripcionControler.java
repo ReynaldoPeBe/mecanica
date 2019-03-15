@@ -24,14 +24,14 @@ public class InscripcionControler {
 
 	@PostMapping(value = "/formulariomecanica")
 	public String formulariomecanica(Map<String, Object> m) {
-		System.out.println("Entrando al formulario");
+		//System.out.println("Entrando al formulario");
 		/* ver la cantidad de inscritos */
 		List<Persona> listapersonas = personaDao.findAll();
 		Long cantidadInscritos = Long.valueOf(listapersonas.size());
-		System.out.println("Cantidad   " + cantidadInscritos);
+		//System.out.println("Cantidad   " + cantidadInscritos);
 		/* ver cantidad de cupoas disponibles */
 		Cupo cupo = cupoDao.getCupo(1L);
-		System.out.println("EL CUPO ES  " + cupo.getCantidad());
+		//System.out.println("EL CUPO ES  " + cupo.getCantidad());
 		if (cantidadInscritos < Long.valueOf(cupo.getCantidad())) {
 			m.put("haycupowasabi", "1");
 		}else {
