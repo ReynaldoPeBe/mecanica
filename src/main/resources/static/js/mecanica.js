@@ -19,5 +19,3 @@ function anchorjes(cc) {
 		scrollTop : $("#" + cc).offset().top
 	}, 1500);
 }
-$(document).ready(function() {
-});

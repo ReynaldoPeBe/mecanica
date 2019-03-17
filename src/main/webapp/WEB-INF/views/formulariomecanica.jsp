@@ -2,7 +2,12 @@
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!-- Author: Jesús Reynaldo Pérez Benavides -->
-
+<style>
+.error {
+	color: red;
+	text-align: left;
+}
+</style>
 <c:if test="${haycupowasabi==1}">
 	<div class="container mt-5 mb-5">
 		<div class="card">
@@ -12,9 +17,8 @@
 			</h5>
 			<div class="card-body px-lg-5">
 				<form:form action="/inscripcion" method="post"
-					modelAttribute="persona" class="text-center"
-					style="color: #757575;">
-
+					modelAttribute="persona" class="text-center" id="formmecanica"
+					name="formmecanica" style="color: #757575;">
 					<p>
 						Para poder inscribirte debes llenar todo el formulario, recuerda,
 						<b>la información</b> que nos proporciones nos servirá para la <b>entrega
@@ -61,10 +65,12 @@
 <c:if test="${haycupowasabi==0}">
 	<div class="alert alert-danger alert-dismissible fade show my-5"
 		role="alert">
-		<strong class="text-center">Lo sentimos ya no hay cupos para el curso.</strong>
+		<strong class="text-center">Lo sentimos ya no hay cupos para
+			el curso.</strong>
 		<button type="button" class="close" data-dismiss="alert"
 			aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 		</button>
 	</div>
 </c:if>
+<script src="/js/validatemec.js"></script>

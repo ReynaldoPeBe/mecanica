@@ -1,6 +1,6 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,7 +40,6 @@
 				<p class="text-white">Curso teórico practico en donde aprenderás
 					sobre las tecnologías de manufactura aditiva, configuraciones de
 					impresión, además de sus aplicaciones.</p>
-
 				<button class="btn btn-warning" onclick="sd();">Quiero
 					inscribirme</button>
 			</div>
@@ -56,6 +55,9 @@
 	<script src="/mdb-4.6.0/js/popper.min.js"></script>
 	<script src="/mdb-4.6.0/js/bootstrap.min.js"></script>
 	<script src="/mdb-4.6.0/js/mdb.min.js"></script>
+	<script src="/js/jquery-validation-1.16.0/dist/jquery.validate.min.js"></script>
+	<script
+		src="/js/jquery-validation-1.16.0/dist/additional-methods.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/mecanica.js"></script>
 </body>
