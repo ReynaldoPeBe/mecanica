@@ -8,7 +8,5 @@ public interface IPersonaDao {
 
 	void save(Persona persona);
 	List<Persona> findAll();
-
-	
-
+	Persona getPersonaConCi(Long ci);
 }

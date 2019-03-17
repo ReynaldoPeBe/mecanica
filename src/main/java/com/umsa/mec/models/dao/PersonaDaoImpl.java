@@ -28,5 +28,11 @@ public class PersonaDaoImpl implements IPersonaDao {
 		return em.createQuery("from Persona").getResultList();
 	}
 
+	@Override
+	@Transactional(readOnly=true)
+	public Persona getPersonaConCi(Long ci) {
+		return (Persona) em.createQuery("Select p from Persona p WHERE p.ci=:column1").setParameter("column1", ci).getSingleResult();
+	}
+
 	
 }

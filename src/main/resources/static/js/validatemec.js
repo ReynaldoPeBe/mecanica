@@ -12,7 +12,8 @@ $(document).ready(function() {
 			},
 			ci:{
 				required:true,
-				number:true
+				number:true,
+				maxlength: 11
 			},
 			celular:{
 				required:true,
@@ -46,7 +47,6 @@ $(document).ready(function() {
             }
         },
         submitHandler: function(form) {
-            //alert("Enviaremos el formulario");
             $(form).ajaxSubmit();
           }
 	});

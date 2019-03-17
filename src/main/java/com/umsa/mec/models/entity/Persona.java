@@ -37,7 +37,7 @@ public class Persona implements Serializable {
 	private String apellidoMaterno;
 
 	private Integer celular;
-	private Integer ci;
+	private Long ci;
 	private String email;
 
 	@Column(name = "fecha_creacion")
@@ -103,11 +103,11 @@ public class Persona implements Serializable {
 		this.celular = celular;
 	}
 
-	public Integer getCi() {
+	public Long getCi() {
 		return ci;
 	}
 
-	public void setCi(Integer ci) {
+	public void setCi(Long ci) {
 		this.ci = ci;
 	}
 
