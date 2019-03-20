@@ -11,12 +11,11 @@
 <c:if test="${haycupowasabi==1}">
 	<div class="container mt-5 mb-5">
 		<div class="card">
-			<h5
-				class="card-header default-color-dark white-text text-center py-4">
+			<h5	class="card-header default-color-dark white-text text-center py-4">
 				<strong>${f}</strong>
 			</h5>
 			<div class="card-body px-lg-5">
-				<form:form action="/inscripcion" method="post"
+				<form:form action="inscripcion" method="post"
 					modelAttribute="persona" class="text-center" id="formmecanica"
 					name="formmecanica" style="color: #757575;">
 					<p>
@@ -73,4 +72,4 @@
 		</button>
 	</div>
 </c:if>
-<script src="/js/validatemec.js"></script>
+<script src="js/validatemec.js"></script>

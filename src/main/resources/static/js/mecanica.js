@@ -2,7 +2,7 @@
 function sd() {
 	$.ajax({
 		type : "POST",
-		url : "/formulariomecanica",
+		url : "formulariomecanica",
 		data : {
 			codigo : ""
 		},

@@ -34,5 +34,4 @@ public class PersonaDaoImpl implements IPersonaDao {
 		return (Persona) em.createQuery("Select p from Persona p WHERE p.ci=:column1").setParameter("column1", ci).getSingleResult();
 	}
 
-	
 }

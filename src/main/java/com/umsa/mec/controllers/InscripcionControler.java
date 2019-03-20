@@ -6,6 +6,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -46,7 +47,8 @@ public class InscripcionControler {
 	@PostMapping(value = "/inscripcion")
 	public String inscripcion(Persona persona, Model m, final RedirectAttributes redirectAttributes) {
 		Long ci = persona.getCi();
-		Persona p=null;
+		Persona p = null;
+
 		try {
 			p = personaDao.getPersonaConCi(ci);
 		} catch (Exception e) {
@@ -59,5 +61,12 @@ public class InscripcionControler {
 			redirectAttributes.addFlashAttribute("resultado", "Usted ya se inscribió con anterioridad");
 		}
 		return "redirect:/index";
+	}
+
+	@GetMapping(value = "showinscritos")
+	public String showinscritos(Map<String, Object> model) {
+		List<Persona> listpersonas = personaDao.findAll();
+		model.put("listpesonas",listpersonas);
+		return "showinscritos";
 	}
 }
